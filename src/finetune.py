@@ -225,15 +225,15 @@ test2_ds = None
 if dataset == "Intel":
     #Intel
     train2_ds = ImageFolder(
-        root="/home/prachh/datasets/intel_scene/seg_train/seg_train/",
+        root="/home/datasets/intel_scene/seg_train/seg_train/",
         transform=custom_transform
     )
     valid2_ds = ImageFolder(
-        root="/home/prachh/datasets/intel_scene/seg_test/seg_test/",
+        root="/home/datasets/intel_scene/seg_test/seg_test/",
         transform=custom_transform
     )
     test2_ds = ImageFolder(
-        root="/home/prachh/datasets/intel_scene/seg_test/seg_test/",
+        root="/home/datasets/intel_scene/seg_test/seg_test/",
         transform=custom_transform
     )
     print("dataset examples - ", len(train2_ds), len(valid2_ds), len(test2_ds))
@@ -241,15 +241,15 @@ if dataset == "Intel":
 if dataset == "cifar":
     #Intel
     train2_ds = ImageFolder(
-        root="/home/prachh/datasets/cifar10_fn/cifar/train/",
+        root="/home/datasets/cifar10_fn/cifar/train/",
         transform=custom_transform
     )
     valid2_ds = ImageFolder(
-        root="/home/prachh/datasets/cifar10_fn/cifar/test/",
+        root="/home/datasets/cifar10_fn/cifar/test/",
         transform=custom_transform
     )
     test2_ds = ImageFolder(
-        root="/home/prachh/datasets/cifar10_fn/cifar/test/",
+        root="/home/datasets/cifar10_fn/cifar/test/",
         transform=custom_transform
     )
     print("dataset examples - ", len(train2_ds), len(valid2_ds), len(test2_ds))
@@ -257,15 +257,15 @@ if dataset == "cifar":
 if dataset == "aptos":
     #Intel
     train2_ds = ImageFolder(
-        root="/home/prachh/datasets/aptos/train/",
+        root="/home/datasets/aptos/train/",
         transform=custom_transform
     )
     valid2_ds = ImageFolder(
-        root="/home/prachh/datasets/aptos/test/",
+        root="/home/datasets/aptos/test/",
         transform=custom_transform
     )
     test2_ds = ImageFolder(
-        root="/home/prachh/datasets/aptos/test/",
+        root="/home/datasets/aptos/test/",
         transform=custom_transform
     )
     print("dataset examples - ", len(train2_ds), len(valid2_ds), len(test2_ds))
@@ -381,7 +381,7 @@ if flag == "train":
         if min_val_loss > torch.tensor(losses).mean():
             min_val_loss = torch.tensor(losses).mean()
             best_val_acc = torch.tensor(accuracies).mean()
-            torch.save(eval_model.state_dict(), f'/home/prachh/functional_transfer_ssl/models/downstream_resnet{rn}_{dataset}')
+            torch.save(eval_model.state_dict(), f'/home/functional_transfer_ssl/models/downstream_resnet{rn}_{dataset}')
             print(f'so far classification validation loss: {torch.tensor(losses).mean():.5f}')
             print(f'so far classification validation accuracy: {torch.tensor(accuracies).mean():.5f}', 
             end ='\n\n')
@@ -393,7 +393,7 @@ if flag == "eval":
     
     simclr_model = SimCLR(rn = rn).to(DEVICE)
     eval_model = LinearEvaluation(simclr_model, nu_classes).to(DEVICE)
-    eval_model.load_state_dict(torch.load(f'/home/prachh/functional_transfer_ssl/models/downstream_resnet{rn}_{dataset}')) #load_tar
+    eval_model.load_state_dict(torch.load(f'/home/functional_transfer_ssl/models/downstream_resnet{rn}_{dataset}')) #load_tar
     from tqdm import tqdm
     correct = 0
     total = 0
@@ -437,7 +437,7 @@ if flag == "eval":
     plt.ylabel('True Positive Rate')
     plt.title('Receiver operating characteristic')
     plt.legend(loc="lower right")
-    plt.savefig(f"/home/prachh/functional_transfer_ssl/finetuned_resnet{rn}_{dataset}_.png")
+    plt.savefig(f"/home/functional_transfer_ssl/finetuned_resnet{rn}_{dataset}_.png")
 
     
     
