@@ -9,6 +9,14 @@ This work investigates the unexplored usability of self-supervised representatio
 <p align="center">
   <img src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/method.png">
 </p>
+
+# Datasets
+Three publically available datasets from different visual domains are chosen for exprimentations.
+
+1. CIFAR10 - The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck), with 6000 images per class. There are 50000 training images and 10000 test images.
+2. Intel Images - This is image data of Natural Scenes around the world. This Data contains around 25000 images (of which 17034 used) of size 150x150 distributed under six categories (buildings, forest, glaciar, mountain, sea, and street).
+3. APTOS 2019 - A set of 3662 retina images of fundus photography under a variety of imaging conditions. A clinician has rated each image for the severity of diabetic retinopathy on a scale of 0 to 4 (0: No DR, 1: Mild, 2: Moderate, 3: Severe, and 4: Proliferative DR). 
+
 # Results
 All the expriments have batch size of 256 and ResNet18 encoder.
 <p align="center">
@@ -16,7 +24,7 @@ All the expriments have batch size of 256 and ResNet18 encoder.
 </p>
 
 # Qualitative
-<p align="centert">
+<p align="center">
   <img  src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/qualitative_analysis.png">
 </p>
 
