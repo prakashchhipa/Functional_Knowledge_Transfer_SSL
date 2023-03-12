@@ -233,12 +233,12 @@ nu_classes = None
 if "intel" == dataset:
     # complete dataset
     train_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/intel_scene/seg_train/seg_train/**/*.jpg",recursive = True),
+        list_images=glob.glob("/home/datasets/intel_scene/seg_train/seg_train/**/*.jpg",recursive = True),
         dataset= "intel",
         transform=custom_transform
     )
     valid_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/intel_scene/seg_test/seg_test/**/*.jpg",recursive = True),
+        list_images=glob.glob("/home/datasets/intel_scene/seg_test/seg_test/**/*.jpg",recursive = True),
         dataset= "intel",
         transform=custom_transform
     )
@@ -250,19 +250,19 @@ elif 'cifar' == dataset:
         transform=custom_transform
     )
     valid_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/cifar10_fn/cifar/test/**/*.png",recursive = True),
+        list_images=glob.glob("/home/datasets/cifar10_fn/cifar/test/**/*.png",recursive = True),
         dataset= "cifar",
         transform=custom_transform
     )
     nu_classes = 10
 else:
     train_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/aptos/train/**/*.png",recursive = True),
+        list_images=glob.glob("/home/datasets/aptos/train/**/*.png",recursive = True),
         dataset= "aptos",
         transform=custom_transform
     )
     valid_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/aptos/test/**/*.png",recursive = True),
+        list_images=glob.glob("/home/datasets/aptos/test/**/*.png",recursive = True),
         dataset= "aptos",
         transform=custom_transform
     ) 
@@ -386,7 +386,7 @@ for epoch in range(epochs):
     curr_acc = torch.tensor(accuracies).mean()
     if best_val_acc < curr_acc:
         best_val_acc = curr_acc
-        torch.save(simclr_model.state_dict(), f'/home/prachh/functional_transfer_ssl/models/epoch100_join_train_resnet{rn}_{dataset}_{best_val_acc}')
+        torch.save(simclr_model.state_dict(), f'/home/functional_transfer_ssl/models/epoch100_join_train_resnet{rn}_{dataset}_{best_val_acc}')
         print(f'so far classification validation accuracy: {curr_acc:.5f}', end ='\n\n')
         print(f"saved checkpoint for epoch {epoch + 1}")
 
@@ -397,7 +397,7 @@ correct = 0
 total = 0
 preds = []
 labels = []
-simclr_model.load_state_dict(torch.load(f'/home/prachh/functional_transfer_ssl/models/epoch100_join_train_resnet{rn}_{dataset}_{best_val_acc}'))
+simclr_model.load_state_dict(torch.load(f'/home/functional_transfer_ssl/models/epoch100_join_train_resnet{rn}_{dataset}_{best_val_acc}'))
 with torch.no_grad():
     for i, (views,img,label) in enumerate(tqdm(valid_dl)):
         image = img.to(DEVICE)
