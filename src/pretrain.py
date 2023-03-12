@@ -292,37 +292,34 @@ validd_ds = None
 if dataset == "cifar":
     # complete dataset
     trainn_ds = CustomDataset(
-        #list_images=glob.glob("/home/ccet/SIH/Data/split-data/train/**/*.tif",recursive = True),
-        list_images=glob.glob("/home/prachh/datasets/cifar10_fn/cifar/train/**/*.png",recursive = True),
+        list_images=glob.glob("/home/datasets/cifar10_fn/cifar/train/**/*.png",recursive = True),
         
         transform=custom_transform
     )
     validd_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/cifar10_fn/cifar/test/**/*.png",recursive = True),
+        list_images=glob.glob("/home/datasets/cifar10_fn/cifar/test/**/*.png",recursive = True),
         transform=custom_transform
     )
 elif dataset == "aptos":
      # complete dataset
     trainn_ds = CustomDataset(
-        #list_images=glob.glob("/home/ccet/SIH/Data/split-data/train/**/*.tif",recursive = True),
-        list_images=glob.glob("/home/prachh/datasets/aptos2019/train_images/train_images/*.png",recursive = True),
+        list_images=glob.glob("/home/datasets/aptos2019/train_images/train_images/*.png",recursive = True),
         
         transform=custom_transform
     )
     validd_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/aptos2019/test_images/test_images/*.png",recursive = True),
+        list_images=glob.glob("/home/datasets/aptos2019/test_images/test_images/*.png",recursive = True),
         transform=custom_transform
     )
 else:
      # complete dataset
     trainn_ds = CustomDataset(
-        #list_images=glob.glob("/home/ccet/SIH/Data/split-data/train/**/*.tif",recursive = True),
-        list_images=glob.glob("/home/prachh/datasets/intel_scene/seg_train/seg_train/**/*.jpg",recursive = True),
+        list_images=glob.glob("/home/datasets/intel_scene/seg_train/seg_train/**/*.jpg",recursive = True),
         
         transform=custom_transform
     )
     validd_ds = CustomDataset(
-        list_images=glob.glob("/home/prachh/datasets/intel_scene/seg_test/seg_test/**/*.jpg",recursive = True),
+        list_images=glob.glob("/home/datasets/intel_scene/seg_test/seg_test/**/*.jpg",recursive = True),
         transform=custom_transform
     )
 
@@ -375,7 +372,7 @@ for epoch in range(EPOCHS):
         print(f'EPOCH: {epoch+51} BATCH: {i+1} LOSS: {(running_loss/100):.4f} ')
         
         # Checkpoint 
-        torch.save(simclr_model.state_dict(), f'/home/prachh/functional_transfer_ssl/models/simclr_resnet{rn}_pretrained_two_stage_{checkpoint}_{dataset}') 
+        torch.save(simclr_model.state_dict(), f'/home/functional_transfer_ssl/models/simclr_resnet{rn}_pretrained_two_stage_{checkpoint}_{dataset}') 
         checkpoint += 1 
     running_loss = 0.0
     print(f'Time taken: {((time.time()-t0)/60):.3f} mins')
