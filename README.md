@@ -8,10 +8,13 @@ This work investigates the unexplored usability of self-supervised representatio
 ![alt text](https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/method.png)
 
 # Results
-![alt text](https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/results.png)
-
+<p align="center">
+  <img width="460" height="300" src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/results.png">
+</p>
 # Qualitative Analysis
-![alt text](https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/qualitative_analysis.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/qualitative_analysis.png">
+</p>
 
 # Commands
 
