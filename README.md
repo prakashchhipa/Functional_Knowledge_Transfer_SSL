@@ -18,7 +18,7 @@ Three publically available datasets from diverse visual domains are chosen for e
 3. [APTOS 2019](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data) - A set of 3662 retina images of fundus photography under a variety of imaging conditions. A clinician has rated each image for the severity of diabetic retinopathy on a scale of 0 to 4 (0: No DR, 1: Mild, 2: Moderate, 3: Severe, and 4: Proliferative DR). 
 
 # Results
-All the expriments have batch size of 256 and ResNet18 encoder.
+All the expriments have batch size of 256 and ResNet50 encoder.
 <p align="center">
   <img src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/results.png">
 </p>
@@ -27,6 +27,10 @@ All the expriments have batch size of 256 and ResNet18 encoder.
 <p align="center">
   <img  src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/qualitative_analysis.png">
 </p>
+
+# Pretrained Model
+
+
 
 # Commands
 
