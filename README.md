@@ -28,10 +28,19 @@ All the expriments have batch size of 256 and ResNet50 encoder.
   <img  src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/figures/qualitative_analysis.png">
 </p>
 
-# Pretrained Model
+# Model Weights
 
+1. Functional Knowledge Transfer Jointly Trained Models
+   a. [ResNet50 on CIFAR10](https://drive.google.com/file/d/1J12zUXu0v7BvqfdijdBHGYdhzOr0tzQn/view?usp=share_link)
+   b. [ResNet50 on Aptos 2019](https://drive.google.com/file/d/1-Mvtb8a2i1t36nP9E3ZssqauMU4GJ7Lc/view?usp=share_link)
+   c. [ResNet50 on Intel Images](https://drive.google.com/file/d/1acVhOUPz7pOLXbdA8YTFqa_yIFP58XM7/view?usp=share_link)
+   
+2. SSL Pretrained Models
+   a. [ResNet50 on CIFAR10](https://drive.google.com/file/d/1hWCnT6Wcf_gipAra7aVNlStzgFaEa-Kk/view?usp=share_link)
+   b. [ResNet50 on Aptos 2019](https://drive.google.com/file/d/1fP3kgFOlpoZ7_1roNv7e8rC6GzOTzVhl/view?usp=share_link)
+   c. [ResNet50 on Intel Images](https://drive.google.com/file/d/1hWCnT6Wcf_gipAra7aVNlStzgFaEa-Kk/view?usp=share_link)
 
-
+  
 # Commands
 
 1. Pretrain (for representational transfer)
