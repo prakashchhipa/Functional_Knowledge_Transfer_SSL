@@ -1,10 +1,10 @@
 # Title
 Functional Knowledge Transfer with Self-supervised Representation Learning
 
-#Article
+# Article
 [Arxiv Version](https://arxiv.org/pdf/2304.01354.pdf)
 
-#Venue
+# Venue
 Submitted in conference
 
 # Abstract
