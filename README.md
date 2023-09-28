@@ -17,7 +17,8 @@ Chhipa, Prakash Chandra, Muskaan Chopra, Gopal Mengi, Varun Gupta, Richa Upadhya
   <img src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/poster_icon.JPG" height= 70%  width= 50%>
 </p>
 
-**Short video presentation (4 minutes) describing the work**
+**Video presentation (5+ minutes) describing the work**
+
 [![IMAGE ALT TEXT HERE](https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/content/video_icon_github.JPG)](https://www.youtube.com/watch?v=GlnDm_GrVm0)
 
 # Abstract
