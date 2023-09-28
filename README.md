@@ -1,11 +1,25 @@
 # Title
 Functional Knowledge Transfer with Self-supervised Representation Learning
 
-# Article
-[Arxiv Version](https://arxiv.org/pdf/2304.01354.pdf)
-
 # Venue
 Accepted at [IEEE International Conference on Image Processing](https://2023.ieeeicip.org/) (ICIP 2023)
+
+Chhipa, Prakash Chandra, Muskaan Chopra, Gopal Mengi, Varun Gupta, Richa Upadhyay, Meenakshi Subhash Chippa, Kanjar De, Rajkumar Saini, Seiichi Uchida, and Marcus Liwicki. "Functional Knowledge Transfer with Self-supervised Representation Learning." In 2023 IEEE International Conference on Image Processing (ICIP), pp. 3339-3343. IEEE, 2023.
+
+# Article
+[IEEE](https://ieeexplore.ieee.org/abstract/document/10222142)
+[Arxiv Version](https://arxiv.org/pdf/2304.01354.pdf)
+
+# Poster & Presentation Video 
+
+**Click [here](https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/content/Poster_Functional_Knowledge_Transfer_with_Self-supervised_Representation_Learning.pdf) for enlarged view**
+<p align="center" >
+  <img src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/content/intro.JPG" height= 50%  width= 30%>
+</p>
+
+**Short video presentation (4 minutes) describing the work**
+[![IMAGE ALT TEXT HERE](https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/content/video_icon_github.JPG)](https://www.youtube.com/watch?v=GlnDm_GrVm0)
+
 # Abstract
 This work investigates the unexplored usability of self-supervised representation learning in the direction of functional knowledge transfer. In this work, functional knowledge transfer is achieved by joint optimization of self-supervised learning pseudo task and supervised learning task, improving supervised learning task performance. Recent progress in self-supervised learning uses a large volume of data, which becomes a constraint for its applications on small-scale datasets. This work shares a simple yet effective joint training framework that reinforces human-supervised task learning by learning self-supervised representations just-in-time and vice versa. Experiments on three public datasets from different visual domains, Intel Image, CIFAR, and APTOS, reveal a consistent track of performance improvements on classification tasks during joint optimization. Qualitative analysis also supports the robustness of learnt representations.
 
