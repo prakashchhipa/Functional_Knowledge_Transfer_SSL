@@ -14,7 +14,7 @@ Chhipa, Prakash Chandra, Muskaan Chopra, Gopal Mengi, Varun Gupta, Richa Upadhya
 
 **Click [here](https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/content/Poster_Functional_Knowledge_Transfer_with_Self-supervised_Representation_Learning.pdf) for enlarged view**
 <p align="center" >
-  <img src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/content/intro.JPG" height= 50%  width= 30%>
+  <img src="https://github.com/prakashchhipa/Functional_Knowledge_Transfer_SSL/blob/main/poster_icon.JPG" height= 70%  width= 50%>
 </p>
 
 **Short video presentation (4 minutes) describing the work**
